@@ -1,0 +1,6 @@
+{
+  "goals": [
+    { "id": "1", "title": "Daily Base", "targetOz": 64 },
+    { "id": "2", "title": "Active Day", "targetOz": 90 }
+  ]
+}
