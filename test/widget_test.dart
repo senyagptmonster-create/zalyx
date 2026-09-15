@@ -1,10 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:zalyx/product/product_app.dart';
+import 'package:zalyx/zalyx_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('ZalyxWaterApp smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const ZalyxWaterApp());
+    expect(find.byType(ZalyxWaterApp), findsOneWidget);
   });
 }
