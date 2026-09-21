@@ -116,12 +116,14 @@ class _HydrationStudioScreenState extends State<HydrationStudioScreen>
                 child: Text('No water logged yet today. Drink up!', style: TextStyle(color: ZalyxTheme.muted)),
               )
             else
-              ListView.builder(
-                shrinkWrap: true,
-                itemCount: _intakeLog.length,
-                itemBuilder: (ctx, idx) => ListTile(
-                  leading: const Icon(Icons.water_drop, color: ZalyxTheme.accentLight),
-                  title: Text(_intakeLog[idx], style: const TextStyle(fontWeight: FontWeight.w600)),
+              SizedBox(
+                height: 260,
+                child: ListView.builder(
+                  itemCount: _intakeLog.length,
+                  itemBuilder: (ctx, idx) => ListTile(
+                    leading: const Icon(Icons.water_drop, color: ZalyxTheme.accentLight),
+                    title: Text(_intakeLog[idx], style: const TextStyle(fontWeight: FontWeight.w600)),
+                  ),
                 ),
               ),
           ],
